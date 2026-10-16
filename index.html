@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="om">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Wiirtuu Barnoota Web – Weebsaayitii fi Yuutuubii Bakka Tokkotti</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Source+Sans+3:wght@400;600&display=swap">
+<link rel="stylesheet" href="style.css">
+<meta name="description" content="Weebsaayitii fi chaanaalii Yuutuubii web development barsiisan bakka tokkotti. / Websites and YouTube channels for learning web development.">
+<meta name="theme-color" content="#0a3326">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Wiirtuu Barnoota Web">
+<meta property="og:description" content="Weebsaayitii fi Yuutuubii barnoota web bakka tokkotti. / Web learning resources in one place.">
+<!-- Suuraa qooduuf: sararri armaan gadii jalatti URL suuraa (1200x630) kee kaa'i
+<meta property="og:image" content="https://SAAYITII-KEE/og.png"> -->
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<div class="hero"><div class="wrap">
+  <div class="topbar">
+    <img class="logo" src="logo.png" alt="MC logo" width="40" height="40">
+    <div class="seg" role="group" aria-label="Afaan / Language">
+      <button type="button" data-lang="om">Afaan Oromoo</button>
+      <button type="button" data-lang="en">English</button>
+    </div>
+    <button class="theme" id="theme" type="button"></button>
+  </div>
+  <h1 data-i18n="h1">Weebsaayitii fi Yuutuubii barnoota web bakka tokkotti.</h1>
+  <p data-i18n="heroP">Madda gaarii barbaaduuf yeroo hin dabarsin. Filannoo kee fili, madda mijaa'e argadhu, achumaan bani.</p>
+</div></div>
+<div class="stripe"></div>
+
+<div class="tools"><div class="wrap">
+  <input class="search" id="q" type="search" aria-label="Search">
+  <div class="row" id="f-type"><b data-i18n="fType">Gosa</b></div>
+  <div class="row" id="f-topic"><b data-i18n="fTopic">Mata-duree</b></div>
+  <div class="row" id="f-lang"><b data-i18n="fLang">Afaan</b></div>
+</div></div>
+
+<main><div class="wrap">
+  <div class="bar"><p class="count" id="count" aria-live="polite"></p>
+    <div><button class="chip" id="favchip" type="button" aria-pressed="false"></button> <button class="chip" id="share" type="button"></button></div></div>
+  <div class="grid" id="list"></div>
+</div></main>
+<section class="road" id="road"><div class="wrap">
+  <h2 data-i18n="roadH">Karoora barnootaa koo</h2>
+  <p class="lead" data-i18n="roadP"></p>
+  <div class="prog"><div id="bar"></div></div><p id="progtxt" class="count"></p>
+  <ol id="steps"></ol>
+</div></section>
+
+<footer><div class="wrap"><span data-i18n="footA">Madda gaarii beektu?</span> <a data-i18n="footLink" href="#" data-add>Nuuf ergi</a> <span data-i18n="footB">– ni dabalna.</span>
+  <!-- Linkii hawaasaa kee asitti jijjiiri -->
+  <span class="soc"><a href="https://t.me/maqaakee" target="_blank" rel="noopener">Telegram</a><a href="https://www.youtube.com/@maqaakee" target="_blank" rel="noopener">YouTube</a><a href="https://www.tiktok.com/@maqaakee" target="_blank" rel="noopener">TikTok</a><a href="https://facebook.com/maqaakee" target="_blank" rel="noopener">Facebook</a></span></div></footer>
+<dialog id="dlg"><form id="frm">
+  <h3 data-i18n="fTitle"></h3>
+  <label><span data-i18n="fName"></span><input name="nm" required></label>
+  <label><span data-i18n="fLink"></span><input name="link" type="url" required placeholder="https://"></label>
+  <label><span data-i18n="fKind"></span><select name="kind"><option value="YouTube">YouTube</option><option value="Website">Website</option></select></label>
+  <label><span data-i18n="fLangQ"></span><select name="lang"><option>Afaan Oromoo</option><option>English</option></select></label>
+  <label><span data-i18n="fNote"></span><textarea name="note" rows="2"></textarea></label>
+  <div class="acts"><button type="button" id="dclose" class="btn alt" data-i18n="fClose"></button><button type="submit" class="btn" data-i18n="fSend"></button></div>
+</form></dialog>
+
+<script src="script.js"></script>
+</body>
+</html>

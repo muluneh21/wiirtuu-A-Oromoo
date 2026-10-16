@@ -1,0 +1,77 @@
+:root{--bg:#f5f7f1;--surface:#fff;--ink:#14201b;--muted:#506059;--green:#0f5c3f;--deep:#0a3326;--gold:#f0b429;--red:#d6402b;--line:#d9e0d6;--chip:#e8eee6;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0c1511;--surface:#13201a;--ink:#eaf2ec;--muted:#9bb0a5;--line:#243830;--chip:#1c2f27;--green:#3fb487}}
+:root[data-theme="dark"]{--bg:#0c1511;--surface:#13201a;--ink:#eaf2ec;--muted:#9bb0a5;--line:#243830;--chip:#1c2f27;--green:#3fb487}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.55 "Source Sans 3",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;margin:0;line-height:1.12}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.hero{background:var(--deep);color:#f1f6f2;padding:48px 0 40px}
+.hero h1{font-size:clamp(32px,5.2vw,54px);font-weight:800;letter-spacing:-.02em;max-width:18ch}
+.hero p{color:#bcd2c6;max-width:54ch;margin:14px 0 0}
+.stripe{height:8px;background:linear-gradient(90deg,#0f8a5c 33.3%,var(--gold) 33.3% 66.6%,var(--red) 66.6%)}
+.tools{position:sticky;top:env(safe-area-inset-top,0px);z-index:3;background:var(--bg);border-bottom:1px solid var(--line);padding:16px 0 12px}
+.search{width:100%;padding:12px 16px;border-radius:12px;border:2px solid var(--line);background:var(--surface);color:var(--ink);font:inherit}
+.search:focus{border-color:var(--green);outline:none}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:10px}
+.row b{font:700 14px "Bricolage Grotesque",sans-serif;margin-right:2px;min-width:70px;color:var(--muted)}
+.chip{border:0;background:var(--chip);color:var(--ink);padding:6px 14px;border-radius:999px;font:600 14px "Source Sans 3",sans-serif;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--green);color:#fff}
+main{padding:28px 0 56px}
+.count{color:var(--muted);margin:0 0 16px;font-weight:600}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:10px}
+.card.yt{border-top:5px solid var(--red)}
+.card.web{border-top:5px solid var(--green)}
+.card .head{display:flex;justify-content:space-between;gap:8px;align-items:center}
+.badge{font:700 12px "Source Sans 3",sans-serif;padding:3px 10px;border-radius:999px;color:#fff}
+.yt .badge{background:var(--red)}.web .badge{background:var(--green)}
+.lvl{font-size:13px;color:var(--muted)}
+.card h3{font-size:20px}
+.card p{margin:0;color:var(--muted);flex:1}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tags span{font-size:13px;background:var(--chip);padding:2px 10px;border-radius:6px}
+.open{align-self:flex-start;background:var(--gold);color:#14201b;font-weight:700;text-decoration:none;padding:9px 18px;border-radius:999px}
+.empty{background:var(--surface);border:2px dashed var(--line);border-radius:14px;padding:32px;text-align:center}
+.empty h3{margin-bottom:8px}
+.btn{display:inline-block;margin-top:14px;background:var(--red);color:#fff;font-weight:600;padding:10px 20px;border-radius:999px;text-decoration:none}
+footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:15px}
+
+/* Ifa / Dukkana filannoo */
+.topbar{display:flex;justify-content:flex-end;margin-bottom:18px}
+.theme{border:2px solid #3c6b58;background:transparent;color:#f1f6f2;padding:7px 16px;border-radius:999px;font:600 14px "Source Sans 3",sans-serif;cursor:pointer}
+.theme:hover{background:#13463a}
+
+/* Filannoo afaanii */
+.topbar{gap:10px;flex-wrap:wrap}
+.seg{display:flex;border:2px solid #3c6b58;border-radius:999px;overflow:hidden}
+.seg button{background:transparent;color:#f1f6f2;border:0;padding:7px 14px;font:600 14px "Source Sans 3",sans-serif;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--gold);color:#14201b}
+
+/* Dabalata ammayyaa */
+.bar{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:16px}.bar .count{margin:0}
+.card .head{justify-content:flex-start;flex-wrap:wrap}.card .head .lvl{margin-left:auto}
+.av{width:34px;height:34px;border-radius:50%;color:#fff;font:700 13px/34px sans-serif;text-align:center;flex:none}
+.card .badge.om{background:var(--gold);color:#14201b}.card .badge.nw{background:#1f6fe0}
+.fav{border:0;background:transparent;font-size:22px;cursor:pointer;color:var(--gold);padding:0 2px}
+mark{background:var(--gold);color:#14201b;border-radius:3px}
+.road{padding:8px 0 56px}.road h2{font-size:clamp(24px,3.5vw,34px);font-weight:800}
+.prog{height:10px;background:var(--chip);border-radius:99px;overflow:hidden;margin:12px 0 6px}.prog div{height:100%;width:0;background:var(--green);transition:width .3s}
+#steps{list-style:none;padding:0;display:grid;gap:8px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+#steps li{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px;display:flex;gap:10px;align-items:center}
+#steps input{width:20px;height:20px;accent-color:var(--green)}
+.soc a{margin-left:12px}
+dialog{border:1px solid var(--line);border-radius:14px;background:var(--surface);color:var(--ink);padding:22px;width:min(440px,92vw)}
+dialog::backdrop{background:rgba(0,0,0,.55)}
+dialog label{display:block;margin:10px 0;font-weight:600;font-size:15px}
+dialog input,dialog select,dialog textarea{display:block;width:100%;margin-top:4px;padding:9px 12px;border:2px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);font:inherit}
+.acts{display:flex;gap:10px;justify-content:flex-end}
+.btn{border:0;cursor:pointer;font:600 16px "Source Sans 3",sans-serif}.btn.alt{background:transparent;color:var(--ink);border:2px solid var(--line)}
+
+.cta{display:flex;gap:10px;align-items:center}
+.sh1{border:2px solid var(--line);background:transparent;color:var(--ink);padding:7px 16px;border-radius:999px;font:600 15px "Source Sans 3",sans-serif;cursor:pointer}
+.sh1:hover{border-color:var(--green)}
+
+.logo{height:44px;width:auto;margin-right:auto}
