@@ -3,7 +3,6 @@
    k: mata-duree (road, PC, HTML, CSS, JS, React, Git)   d: ibsa Oromoo   e: ibsa Ingiliffa */
 var ARR=[
 {n:"Deju Tech",a:"2026-10-15",t:"yt",l:"om",lv:"beg",k:["PC"],d:"Barnoota kompiitaraa bu'uuraa Afaan Oromootiin.",e:"Basic computer education in Afaan Oromo.",u:"https://www.youtube.com/@dejutech"},
-{n:"Borufan",a:"2026-10-15",t:"web",l:"om",lv:"beg",k:["PC"],d:"Weebsaayitii chaanaalii Deju Tech waliin walqabatu.",e:"The website linked from the Deju Tech channel.",u:"https://borufan.com"},
 {n:"Cherchertech Info",a:"2026-10-15",t:"yt",l:"om",lv:"beg",k:["HTML","CSS","JS"],d:"Web development, daataabeezii fi networking salphaatti: PHP, MySQL, HTML, CSS, JavaScript fi qophii COC. Afaan Oromoo fi Ingiliffaan.",e:"Web development, databases and networking made simple: PHP, MySQL, HTML, CSS, JavaScript and COC exam prep, in Afaan Oromo and English.",u:"https://www.youtube.com/@cherchertechinfo"},
 {n:"RoberaTech",a:"2026-10-15",t:"yt",l:"en",lv:"beg",k:["HTML","CSS","JS"],d:"Barnoota tartiibaan: Microsoft Office, C++, Java, PHP, MySQL, HTML, CSS, JavaScript fi Android Studio.",e:"Step-by-step tutorials: Microsoft Office, C++, Java, PHP, MySQL, HTML, CSS, JavaScript and Android Studio.",u:"https://www.youtube.com/@RobetaTech-2024"},
 {n:"Miiltoo Tech",a:"2026-10-15",t:"yt",l:"om",lv:"beg",k:["HTML","CSS","JS"],d:"Markup, programming, scripting fi stylesheet Afaan Oromootiin; barattoota yuunivarsiitii eegachuun qophaa'e.",e:"Markup, programming, scripting and stylesheet languages taught in Afaan Oromo, made for university students.",u:"https://www.youtube.com/@miiltoot"},
@@ -33,7 +32,7 @@ var T={
 om:{
   title:"Wiirtuu Barnoota Web – Weebsaayitii fi Yuutuubii Bakka Tokkotti",
   h1:"Weebsaayitii fi Yuutuubii barnoota web bakka tokkotti.",
-  heroP:"Madda gaarii barbaaduuf yeroo hin dabarsin. Filannoo kee fili, madda mijaa'e argadhu, achumaan bani.",
+  heroP:"Madda gaarii barbaaduuf yeroo hin qisaasessin. Filannoo kee fili, madda mijaa'e argadhu, achumaan bani.",
   ph:"Barbaadi: fkn. CSS, JavaScript, jalqabaa…",
   fType:"Gosa",fTopic:"Mata-duree",fLang:"Afaan",
   type:{all:"Hundi",web:"Weebsaayitii",yt:"Yuutuubii"},
